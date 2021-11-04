@@ -24,26 +24,18 @@ Greate! You can start to use **Laravel Jotform** Package.
 1- You can use `jotform()` helper function in order to access Jotform API:
 ```php
 <?php 
-# in routes/web.php or routes/api.php
 
-Route::get('my-forms', function() {
-    $myForms = jotform()->getForms();
-    return response()->json($myForms);
-});
+$myForms = jotform()->getForms();
 ```
 2- You can use Facade:
 ```php
 <?php 
-# in routes/web.php or routes/api.php
 
 use Jotform\Facade\Jotform;
 
-Route::get('my-forms', function() {
-    $myForms = Jotform::getForms();
-    return response()->json($myForms);
-});
+$myForms = Jotform::getForms();
 ```
-You can find all methods that will be able to use with this package by using [this documentation](https://github.com/jotform/jotform-api-php). 
+You can find **all methods** that will be able to use with this package by using [this documentation](https://github.com/jotform/jotform-api-php). 
 
 ## Config
 You can change the package configs via `config/jotform.php` file or directly using `.env` file variables.
