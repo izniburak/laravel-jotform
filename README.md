@@ -10,6 +10,14 @@ Run the following command directly in your Project path:
 ```
 $ composer require izniburak/laravel-jotform
 ```
+or directly add following command in your `composer.json` file.
+```
+{
+    "require": {
+        "izniburak/laravel-jotform": "^1.0"
+    }
+}
+```
 
 The service provider of the Package will be **automatically discovered** by Laravel.
 
@@ -18,16 +26,18 @@ After that, you should publish the config file via following command:
 ```
 $ php artisan vendor:publish --provider="Jotform\JotformServiceProvider"
 ```
-Greate! You can start to use **Laravel Jotform** Package.
+Greate! You can start to use **Jotform API** in your Laravel app.
 
 ## Usage
-1- You can use `jotform()` helper function in order to access Jotform API:
+You can use Jotform API in two different ways with this package.
+
+1- Use `jotform()` helper function in order to access Jotform API:
 ```php
 <?php 
 
 $myForms = jotform()->getForms();
 ```
-2- You can use Facade:
+2- Use Facade:
 ```php
 <?php 
 
@@ -35,7 +45,7 @@ use Jotform\Facade\Jotform;
 
 $myForms = Jotform::getForms();
 ```
-You can find **all methods** that will be able to use with this package by using [this documentation](https://github.com/jotform/jotform-api-php). 
+**Important:** You can find **all methods** that will be able to use with this package by using [this documentation](https://github.com/jotform/jotform-api-php). (The official PHP package of Jotform) 
 
 ## Config
 You can change the package configs via `config/jotform.php` file or directly using `.env` file variables.
