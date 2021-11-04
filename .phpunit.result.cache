@@ -1,0 +1,1 @@
+{"version":1,"defects":{"Jotform\\Tests\\ServiceTest::test_get_api_url":3,"Jotform\\Tests\\ServiceTest::test_get_all_forms_for_user":4,"Jotform\\Tests\\ServiceTest::test_get_user_form_by_id":5},"times":{"Jotform\\Tests\\ServiceTest::test_get_api_url":0,"Jotform\\Tests\\ServiceTest::test_get_all_forms_for_user":0.778,"Jotform\\Tests\\ServiceTest::test_get_user_form_by_id":0.645}}
