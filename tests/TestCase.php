@@ -15,7 +15,7 @@ abstract class TestCase extends BaseTestCase
         parent::setUp();
 
         ini_set('error_reporting', 0);
-        $this->jotform = Jotform::getInstance([
+        $this->jotform = new Jotform([
             'api_key' => getenv('JOTFORM_API_KEY'),
             'output'  => 'json',
             'debug'   => false

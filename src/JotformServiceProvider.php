@@ -34,7 +34,7 @@ class JotformServiceProvider extends ServiceProvider
         $this->mergeConfigFrom($this->configPath(), 'jotform');
 
         $this->app->singleton(Jotform::class, function ($app) {
-            return Jotform::getInstance($app['config']->get('jotform'));
+            return new Jotform($app['config']->get('jotform'));
         });
     }
 
