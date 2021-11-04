@@ -1,5 +1,5 @@
 {
-    "name": "jotform/laravel-jotform",
+    "name": "izniburak/laravel-jotform",
     "description": "Jotform Laravel Package",
     "keywords": [
         "jotform",
@@ -8,7 +8,7 @@
     ],
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/jotform/laravel-jotform",
+    "homepage": "https://github.com/izniburak/laravel-jotform",
     "authors": [
         {
             "name": "İzni Burak Demirtaş",

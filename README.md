@@ -1,6 +1,6 @@
 # Jotform - Laravel Package
 
-This package allows you able to use Jotform API in Laravel.
+This package allows you able to use [Jotform](https://jotform.com) API in Laravel.
 
 ## Installation
 *Supported Laravel Versions:* **>= 6.x**
